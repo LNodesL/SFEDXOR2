@@ -7,9 +7,9 @@ SFEDXOR v2.0.0 - Single File Encryption &amp; Decryption: XOR - Easily encrypt o
 
 To encrypt a file:
 
-***bash
+```bash
 ./SFEDXOR -i <inputfile> -o <outputfile> -m encrypt [-k <keyfile>] [-ko <keyoutputfile>] [-ks <keystring>]
-***
+```
 
 - `<inputfile>`: Path to the input file to be encrypted.
 - `<outputfile>`: Path to save the encrypted output file.
@@ -22,29 +22,29 @@ Examples:
 
 Encrypt with auto-generated key:
 
-***bash
+```bash
 ./SFEDXOR -i input.txt -o encrypted.txt -m encrypt
-***
+```
 
 Encrypt with specified key file and save key to another file:
 
-***bash
+```bash
 ./SFEDXOR -i input.txt -o encrypted.txt -m encrypt -k key.txt -ko key_saved.txt
-***
+```
 
 Encrypt with inline key string:
 
-***bash
+```bash
 ./SFEDXOR -i input.txt -o encrypted.txt -m encrypt -ks mysecretpassword
-***
+```
 
 ### Decrypt Mode
 
 To decrypt a file:
 
-***bash
+```bash
 ./SFEDXOR -i <inputfile> -o <outputfile> -m decrypt [-k <keyfile>] [-ks <keystring>]
-***
+```
 
 - `<inputfile>`: Path to the encrypted input file.
 - `<outputfile>`: Path to save the decrypted output file.
@@ -56,15 +56,15 @@ Examples:
 
 Decrypt with specified key file:
 
-***bash
+```bash
 ./SFEDXOR -i encrypted.txt -o decrypted.txt -m decrypt -k key.txt
-***
+```
 
 Decrypt with inline key string:
 
-***bash
+```bash
 ./SFEDXOR -i encrypted.txt -o decrypted.txt -m decrypt -ks mysecretpassword
-***
+```
 
 **Note**
 
